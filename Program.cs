@@ -33,12 +33,12 @@ namespace Space
                     double s = p * (p - a) * (p - c) * (p - b);
                     s = Math.Sqrt(s);
 
-                    double heightA = s / a * 2;;
+                    double heightA = s / a * 2; ;
                     double heightB = s / b * 2;
                     double heightC = s / c * 2;
                     Console.WriteLine($"Height A is {heightA}");
-                    Console.WriteLine($"Height A is {heightB}");
-                    Console.WriteLine($"Height A is {heightC}");
+                    Console.WriteLine($"Height B is {heightB}");
+                    Console.WriteLine($"Height C is {heightC}");
                     Console.WriteLine($"Triangle square is {s}");
                 }
                 else
@@ -66,6 +66,9 @@ namespace Space
                 Main(args);
             else
                 return;
+
+
         }
     }
+
 }

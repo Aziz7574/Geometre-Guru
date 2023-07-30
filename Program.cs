@@ -7,6 +7,9 @@ namespace Space
     {
         public static void Main(string[] args)
         {
+            try
+            {
+
             Console.WriteLine("Choose 1 to calculate the surface of triangle using height and its side");
             Console.WriteLine("Choose 2 to calculate the surface of triangle using its sides");
 
@@ -51,7 +54,7 @@ namespace Space
                 Console.Write("Enter the height -> ");
                 float height = float.Parse(Console.ReadLine());
 
-                Console.Write("Enter the basis of triangle - >");
+                Console.Write("Enter the basis of triangle - > 1");
                 float basis = float.Parse(Console.ReadLine());
 
                 Console.WriteLine($"Surface of triangle is {(height * basis) / 2}");
@@ -66,7 +69,21 @@ namespace Space
                 Main(args);
             else
                 return;
+            }
 
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine(ex.Message);  
+            }
+
+            catch(DivideByZeroException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
         }
     }

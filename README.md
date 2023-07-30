@@ -28,3 +28,5 @@ Choose one of option this is up to you
 Last one also shows how I used try catch statement
 
 ![Alt text](/Assets//Images/photo_2023-07-30_11-31-48.jpg)
+
+[Link to latest release](https://github.com/Aziz7574/Geometre-Guru/)
